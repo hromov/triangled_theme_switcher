@@ -7,5 +7,6 @@ export async function getArticle(articleID) {
 }
 
 function quotationsToHTML(quotations) {
-    return quotations.map(q =>`<blockquote>${q.quotation}</blockquote>`).join('');
+    const sorted = quotations.sort((a, b) => a.quotation.length - b.quotation.length);
+    return sorted.map(q =>`<blockquote>${q.quotation}</blockquote>`).join('');
 }

@@ -4,7 +4,7 @@ const themes = new Map();
 
 themes.set('objects', {
     '--background-color': '#dae1de',
-    '--text-color': '#0000008a',
+    '--text-color': '#0000009a',
 });
 
 themes.set('classes', {

@@ -9,6 +9,7 @@
 html {
     box-sizing: border-box;
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 *,
@@ -87,10 +88,14 @@ blockquote {
     border-left: 3px solid var(--stroke-color);
     padding-left: var(--def-margin);
 }
+blockquote::first-letter {
+    text-transform: capitalize;
+}
 
 #content {
     display: grid;
     gap: calc(2 * var(--def-margin));
+    align-items: center;
 }
 
 @media screen and (min-width: 480px) {
