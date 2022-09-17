@@ -2,6 +2,8 @@
     --def-margin: 1rem;
     --background-color: #d1e1de;
     --text-color: #000;
+    --stroke-color: #c90fd1;
+    --t-time: 0.2s;
 }
 
 html {
@@ -20,6 +22,7 @@ body {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    transition: all var(--t-time) ease;
 }
 
 #root {
@@ -39,15 +42,25 @@ body {
 .customRadio {
     display: flex;
     gap: var(--def-margin);
+    cursor: pointer;
 }
-
 .radioSVG {
     width: 2rem;
 }
-
 .radioContainer {
     fill: var(--text-color);
 }
 .radioMarker {
-    width: 2rem;
+    stroke: var(--stroke-color);
+    fill: none;
+    stroke-width: 80;
+    opacity: 0;
+    transition: opacity calc(2*var(--t-time)) ease-in-out;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .customRadio .radioMarker{
+    border: thin solid red;
+    opacity: 1;
 }
