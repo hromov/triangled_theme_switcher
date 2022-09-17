@@ -1,5 +1,7 @@
-{
-    "image": "/assets/no_image.png",
-    "title": "Example Title",
-    "content": "lorem ipsum dolor sit amet etc etc etc"
-}
+[
+    {"quotation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam facere eligendi nemo optio dolorem unde odio. Quaerat unde, molestiae perspiciatis, maxime debitis deserunt necessitatibus fugiat voluptatibus labore vel veritatis!"},
+    {"quotation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam facere eligendi nemo optio dolorem unde odio. Quaerat unde, molestiae perspiciatis, maxime debitis deserunt necessitatibus fugiat voluptatibus labore vel veritatis!"},
+    {"quotation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam facere eligendi nemo optio dolorem unde odio. Quaerat unde, molestiae perspiciatis, maxime debitis deserunt necessitatibus fugiat voluptatibus labore vel veritatis!"},
+    {"quotation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam facere eligendi nemo optio dolorem unde odio. Quaerat unde, molestiae perspiciatis, maxime debitis deserunt necessitatibus fugiat voluptatibus labore vel veritatis!"},
+    {"quotation": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam facere eligendi nemo optio dolorem unde odio. Quaerat unde, molestiae perspiciatis, maxime debitis deserunt necessitatibus fugiat voluptatibus labore vel veritatis!"}
+]

@@ -2,14 +2,10 @@
 
 export async function getArticle(articleID) {
     const resp = await fetch(`/fake_api/${articleID}.json`);
-    const article = await resp.json();
-    return articleToHTML(article);
+    const quotations = await resp.json();
+    return quotationsToHTML(quotations);
 }
 
-function articleToHTML(article) {
-    return `
-        <h1>${article.title}</h1>
-        <img src="${article.image}">
-        <p>${article.content}</p>
-    `;
+function quotationsToHTML(quotations) {
+    return quotations.map(q =>`<blockquote>${q.quotation}</blockquote>`).join('');
 }

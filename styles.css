@@ -50,19 +50,26 @@ body {
     stroke: var(--stroke-color);
     fill: none;
     stroke-width: 80;
-    opacity: 0;
-    transition: opacity calc(2*var(--t-time)) ease-in-out;
+    transition: all calc(2*var(--t-time)) ease-in-out;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
 }
 input[type="radio"] {
     display: none;
 }
 input[type="radio"]:checked + .customRadio .radioMarker{
-    border: thin solid red;
-    opacity: 1;
+    stroke-dashoffset: 0;
 }
 img {
     margin: 0 auto var(--def-margin);
     width: 100%;
+}
+blockquote {
+    margin: 0;
+}
+#content {
+    display: grid;
+    gap: var(--def-margin);
 }
 @media screen and (min-width: 480px) {
     img {
@@ -74,5 +81,8 @@ img {
 @media screen and (min-width: 768px) {
     img {
         width: 33%;
+    }
+    #content {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
