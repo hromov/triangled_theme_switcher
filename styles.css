@@ -5,14 +5,18 @@
     --stroke-color: #c90fd1;
     --t-time: 0.2s;
 }
+
 html {
     box-sizing: border-box;
+    font-size: 18px;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 html,
 body {
     height: 100%;
@@ -21,11 +25,13 @@ body {
     color: var(--text-color);
     transition: all var(--t-time) ease;
 }
+
 #root {
     margin: calc(2*var(--def-margin)) auto;
     padding: 0 var(--def-margin);
     max-width: 1200px;
 }
+
 #topics {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +39,11 @@ body {
     justify-content: center;
     margin-bottom: var(--def-margin);
 }
+
+form {
+    padding: var(--def-margin);
+}
+
 .customRadio {
     display: flex;
     gap: var(--def-margin);
@@ -40,12 +51,15 @@ body {
     vertical-align: center;
     font-size: 2rem;
 }
+
 .radioSVG {
     width: 2rem;
 }
+
 .radioContainer {
     fill: var(--text-color);
 }
+
 .radioMarker {
     stroke: var(--stroke-color);
     fill: none;
@@ -54,23 +68,31 @@ body {
     stroke-dasharray: 800;
     stroke-dashoffset: 800;
 }
+
 input[type="radio"] {
     display: none;
 }
-input[type="radio"]:checked + .customRadio .radioMarker{
+
+input[type="radio"]:checked+.customRadio .radioMarker {
     stroke-dashoffset: 0;
 }
+
 img {
     margin: 0 auto var(--def-margin);
     width: 100%;
 }
+
 blockquote {
     margin: 0;
+    border-left: 3px solid var(--stroke-color);
+    padding-left: var(--def-margin);
 }
+
 #content {
     display: grid;
-    gap: var(--def-margin);
+    gap: calc(2 * var(--def-margin));
 }
+
 @media screen and (min-width: 480px) {
     img {
         float: right;
@@ -78,10 +100,12 @@ blockquote {
         margin: 0 0 var(--def-margin) var(--def-margin);
     }
 }
+
 @media screen and (min-width: 768px) {
     img {
         width: 33%;
     }
+
     #content {
         grid-template-columns: 1fr 1fr 1fr;
     }
