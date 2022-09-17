@@ -1,5 +1,7 @@
 :root {
     --def-margin: 1rem;
+    --background-color: #d1e1de;
+    --text-color: #000;
 }
 html {
     box-sizing: border-box;
@@ -10,6 +12,8 @@ html {
   html, body {
     height: 100%;
     margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
   #root {
     margin: calc(2*var(--def-margin)) auto;

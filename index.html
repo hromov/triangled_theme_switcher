@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme switcher and custom checkboxes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="switcher.js" type="module"></script>
 </head>
 
 <body>
@@ -14,11 +15,11 @@
         <form id="topics">
             <div>
                 <label for="objects">Objects</label>
-                <input type="radio" name="topic" id="objects">
+                <input type="radio" name="topic" id="objects" value="objects" checked>
             </div>
             <div>
                 <label for="classes">Classes</label>
-                <input type="radio" name="topic" id="classes">
+                <input type="radio" name="topic" id="classes" value="classes">
             </div>
         </form>
         <div class="articles">
