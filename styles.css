@@ -43,6 +43,8 @@ body {
     display: flex;
     gap: var(--def-margin);
     cursor: pointer;
+    vertical-align: center;
+    font-size: 2rem;
 }
 .radioSVG {
     width: 2rem;
