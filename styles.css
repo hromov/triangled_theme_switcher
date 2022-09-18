@@ -49,8 +49,12 @@ form {
     display: flex;
     gap: var(--def-margin);
     cursor: pointer;
-    vertical-align: center;
     font-size: 2rem;
+    transition: text-decoration var(--t-time) ease-in-out;
+}
+
+.customRadio:hover {
+    text-decoration: underline;
 }
 
 .radioSVG {
@@ -66,8 +70,8 @@ form {
     fill: none;
     stroke-width: 80;
     transition: all calc(2*var(--t-time)) ease-in-out;
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
+    stroke-dasharray: 725;
+    stroke-dashoffset: 725;
 }
 
 input[type="radio"] {

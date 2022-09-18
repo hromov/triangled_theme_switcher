@@ -2,9 +2,12 @@
 import themes from './scripts/themes.js';
 import { getArticle } from './scripts/articles.js';
 
+const KEYS_THEME = 'theme';
+const DEFAULT_TOPIC = 'objects';
+
 const switcher = document.getElementById('topics');
 const content = document.getElementById('content');
-const defaultTopic = 'objects';
+const defaultTopic = localStorage.getItem(KEYS_THEME) || DEFAULT_TOPIC;
 
 switcher.addEventListener('change', (event) => {
     const topic = event.target.value;
@@ -19,9 +22,13 @@ async function setTopic(topic) {
 
 function setTheme(themeName) {
     const theme = themes.get(themeName);
+    localStorage.setItem(KEYS_THEME, themeName);
     Object.entries(theme).forEach(([key, value]) => {
         document.documentElement.style.setProperty(key, value);
     });
 }
 
-setTopic(defaultTopic);
+(function (){
+    setTopic(defaultTopic);
+    document.getElementById(defaultTopic).setAttribute('checked', true);
+})()
