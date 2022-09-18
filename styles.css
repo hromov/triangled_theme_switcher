@@ -72,6 +72,7 @@ form {
     transition: all calc(2*var(--t-time)) ease-in-out;
     stroke-dasharray: 725;
     stroke-dashoffset: 725;
+    opacity: 0;
 }
 
 input[type="radio"] {
@@ -80,6 +81,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked+.customRadio .radioMarker {
     stroke-dashoffset: 0;
+    opacity: 1;
 }
 
 img {
