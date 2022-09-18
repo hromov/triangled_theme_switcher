@@ -3,6 +3,7 @@
     --background-color: #d1e1de;
     --text-color: #000;
     --stroke-color: #c90fd1;
+    --stroke-length: 725;
     --t-time: 0.2s;
 }
 
@@ -73,8 +74,8 @@ form {
     -moz-transition: all calc(2*var(--t-time)) ease-in-out;
     -o-transition: all calc(2*var(--t-time)) ease-in-out;
     transition: all calc(2*var(--t-time)) ease-in-out;
-    stroke-dasharray: 725;
-    stroke-dashoffset: 725;
+    stroke-dasharray: var(--stroke-length);
+    stroke-dashoffset: var(--stroke-length);
 }
 
 input[type="radio"] {

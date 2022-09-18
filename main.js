@@ -28,7 +28,14 @@ function setTheme(themeName) {
     });
 }
 
+function setStrokeLength() {
+    const el = document.getElementsByClassName('radioMarker')[0];
+    const length = el.getTotalLength();
+    document.documentElement.style.setProperty(`--stroke-length`, length);
+}
+
 (function (){
     setTopic(defaultTopic);
+    setStrokeLength();
     document.getElementById(defaultTopic).setAttribute('checked', true);
 })()
