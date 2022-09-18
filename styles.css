@@ -74,7 +74,7 @@ form {
     -moz-transition: all calc(2*var(--t-time)) ease-in-out;
     -o-transition: all calc(2*var(--t-time)) ease-in-out;
     transition: all calc(2*var(--t-time)) ease-in-out;
-    stroke-dasharray: var(--stroke-length);
+    stroke-dasharray: var(--stroke-length) var(--stroke-length);
     stroke-dashoffset: var(--stroke-length);
 }
 
