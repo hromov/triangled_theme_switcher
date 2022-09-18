@@ -75,7 +75,7 @@ form {
     -o-transition: all calc(2*var(--t-time)) ease-in-out;
     transition: all calc(2*var(--t-time)) ease-in-out;
     stroke-dasharray: var(--stroke-length) var(--stroke-length);
-    stroke-dashoffset: calc(-1 * var(--stroke-length));
+    stroke-dashoffset: var(--stroke-length);
 }
 
 input[type="radio"] {
