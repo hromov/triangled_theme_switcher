@@ -1,0 +1,8 @@
+[
+    {"quotation": "The optional methods on the iterator interface—return(..) and throw(..)—are not implemented on most of the built-in iterators. However, they definitely do mean something in the context of generators"},
+    {"quotation": "return(..) is defined as sending a signal to an iterator that the consuming code is complete and will not be pulling any more values from it. This signal can be used to notify the producer (the iterator responding to next(..) calls) to perform any cleanup it may need to do, such as releasing/closing network, database, or file handle resources."},
+    {"quotation": "throw(..) is used to signal an exception/error to an iterator, which possibly may be used differently by the iterator than the completion signal implied by return(..). It does not necessarily imply a complete stop of the iterator as return(..) generally does."},
+    {"quotation": "A generator can pause itself in mid-execution, and can be resumed either right away or at a later time. So it clearly does not hold the run-to-completion guarantee that normal functions do."},
+    {"quotation": "each pause/resume cycle in mid-execution is an opportunity for two-way message passing, where the generator can return a value, and the controlling code that resumes it can send a value back in."},
+    {"quotation": "You can even put yield inside a loop, and it can represent a repeated pause point. In fact, a loop that never completes just means a generator that never completes, which is completely valid, and sometimes entirely what you need."}
+]

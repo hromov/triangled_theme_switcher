@@ -1,125 +1,129 @@
 :root {
-    --def-margin: 1rem;
-    --background-color: #d1e1de;
-    --text-color: #000;
-    --stroke-color: #c90fd1;
-    --stroke-length: 725;
-    --t-time: 0.2s;
+  --def-margin: 1rem;
+  --background-color: #d1e1de;
+  --text-color: #000;
+  --stroke-color: #c90fd1;
+  --stroke-length: 725;
+  --t-time: 0.2s;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: all var(--t-time) ease;
+  height: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all var(--t-time) ease;
 }
 
 #root {
-    margin: calc(2*var(--def-margin)) auto;
-    padding: 0 var(--def-margin);
-    max-width: 1200px;
+  margin: calc(2 * var(--def-margin)) auto;
+  padding: 0 var(--def-margin);
+  max-width: 1200px;
 }
 
 #topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--def-margin);
-    justify-content: center;
-    margin-bottom: var(--def-margin);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--def-margin);
+  justify-content: center;
+  margin-bottom: var(--def-margin);
 }
 
 form {
-    padding: var(--def-margin);
+  padding: var(--def-margin);
 }
 
 .customRadio {
-    display: flex;
-    gap: var(--def-margin);
-    cursor: pointer;
-    font-size: 2rem;
-    transition: text-decoration var(--t-time) ease-in-out;
+  display: flex;
+  gap: var(--def-margin);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: text-decoration var(--t-time) ease-in-out;
 }
 
 .customRadio:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .radioSVG {
-    width: 2rem;
+  width: 2rem;
 }
 
 .radioContainer {
-    fill: var(--text-color);
+  fill: var(--text-color);
 }
 
 .radioMarker {
-    stroke: var(--stroke-color);
-    fill: none;
-    stroke-width: 80;
-    -webkit-transition: all calc(2*var(--t-time)) ease-in-out;
-    -moz-transition: all calc(2*var(--t-time)) ease-in-out;
-    -o-transition: all calc(2*var(--t-time)) ease-in-out;
-    transition: all calc(2*var(--t-time)) ease-in-out;
-    stroke-dasharray: var(--stroke-length) var(--stroke-length);
-    stroke-dashoffset: var(--stroke-length);
+  stroke: var(--stroke-color);
+  fill: none;
+  stroke-width: 80;
+  -webkit-transition: all calc(2 * var(--t-time)) ease-in-out;
+  -moz-transition: all calc(2 * var(--t-time)) ease-in-out;
+  -o-transition: all calc(2 * var(--t-time)) ease-in-out;
+  transition: all calc(2 * var(--t-time)) ease-in-out;
+  stroke-dasharray: var(--stroke-length) var(--stroke-length);
+  stroke-dashoffset: var(--stroke-length);
+}
+
+.radioTitle::first-letter {
+  text-transform: uppercase;
 }
 
 input[type="radio"] {
-    display: none;
+  display: none;
 }
 
-input[type="radio"]:checked+.customRadio .radioMarker {
-    stroke-dashoffset: 0;
+input[type="radio"]:checked + .customRadio .radioMarker {
+  stroke-dashoffset: 0;
 }
 
 img {
-    margin: 0 auto var(--def-margin);
-    width: 100%;
+  margin: 0 auto var(--def-margin);
+  width: 100%;
 }
 
 blockquote {
-    margin: 0;
-    border-left: 3px solid var(--stroke-color);
-    padding-left: var(--def-margin);
+  margin: 0;
+  border-left: 3px solid var(--stroke-color);
+  padding-left: var(--def-margin);
 }
 blockquote::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #content {
-    display: grid;
-    gap: calc(2 * var(--def-margin));
-    align-items: center;
+  display: grid;
+  gap: calc(2 * var(--def-margin));
+  align-items: center;
 }
 
 @media screen and (min-width: 480px) {
-    img {
-        float: right;
-        width: 50%;
-        margin: 0 0 var(--def-margin) var(--def-margin);
-    }
+  img {
+    float: right;
+    width: 50%;
+    margin: 0 0 var(--def-margin) var(--def-margin);
+  }
 }
 
 @media screen and (min-width: 768px) {
-    img {
-        width: 33%;
-    }
+  img {
+    width: 33%;
+  }
 
-    #content {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  #content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

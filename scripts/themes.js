@@ -12,4 +12,9 @@ themes.set('classes', {
     '--text-color': '#ffffffb3',
 });
 
+themes.set('generators', {
+    '--background-color': '#FCF6BD',
+    '--text-color': '#0000009a',
+});
+
 export default themes;
