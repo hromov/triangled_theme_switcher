@@ -1,7 +1,7 @@
 'use strict';
 
 function isLocal() {
-    return location.hostname === "localhost" || location.hostname === "127.0.0.1";
+    return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
 
 const baseURL = isLocal() ? '' : 'https://hromov.github.io/triangled_theme_switcher';
