@@ -17,4 +17,9 @@ themes.set('generators', {
     '--text-color': '#0000009a',
 });
 
+themes.set('es6', {
+    '--background-color': '#938581',
+    '--text-color': '#ffffffb3',
+});
+
 export default themes;
