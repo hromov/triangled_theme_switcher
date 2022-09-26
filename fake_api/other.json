@@ -1,4 +1,7 @@
 [
     {"quotation": "The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.</br></br>The window.cancelAnimationFrame() method cancels an animation frame request previously scheduled through a call to window.requestAnimationFrame(requestID)."},
-    {"quotation": "String.prototype.padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string."}
+    {"quotation": "String.prototype.padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string."},
+    {"quotation": "React Mounting:<br/><br/>constructor(), getDerivedStateFromProps(), render(), componentDidMount()"},
+    {"quotation": "React Updating:<br/><br/>getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate()"},
+    {"quotation": "Promise Methods — All, AllSettled, Any, and Race"}
 ]

@@ -22,4 +22,9 @@ themes.set('es6', {
     '--text-color': '#ffffffb3',
 });
 
+themes.set('other', {
+    '--background-color': '#210439',
+    '--text-color': '#ffffffb3',
+})
+
 export default themes;
