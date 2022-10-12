@@ -1,4 +1,3 @@
-"use strict";
 import themes from "./scripts/themes.js";
 import { getArticle } from "./scripts/articles.js";
 import rbutton from "./scripts/components/radio.js";

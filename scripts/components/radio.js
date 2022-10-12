@@ -1,5 +1,3 @@
-"use strict";
-
 const svg = `
 <svg class="radioSVG" viewBox="0 0 512.055 512.055">
     <path class="radioContainer" d="M509.775,481.154L275.109,11.82c-7.862-15.724-30.3-15.724-38.162,0L2.28,481.154

@@ -4,5 +4,9 @@
     {"quotation": "The primitive value 'I am a string' is not an object, it’s a primitive literal and immutable value. To perform operations on it, such as checking its length, accessing its individual character contents, etc., a String object is required."},
     {"quotation": "Luckily, the language automatically coerces a string primitive to a String object when necessary, which means you almost never need to explicitly create the Object form."},
     {"quotation": "null is sometimes referred to as an object type, but this misconception stems from a bug in the language that causes typeof null to return the string 'object' in‐ correctly (and confusingly). In fact, null is its own primitive type."},
-    {"quotation": "The top end of every normal [[Prototype]] chain is the built-in Object.prototype. This object includes a variety of common utilities used all over JS, because all normal (built-in, not host-specific exten‐ sion) objects in JavaScript “descend from” (aka have at the top of their [[Prototype]] chain) the Object.prototype object."}
+    {"quotation": "The top end of every normal [[Prototype]] chain is the built-in Object.prototype. This object includes a variety of common utilities used all over JS, because all normal (built-in, not host-specific exten‐ sion) objects in JavaScript “descend from” (aka have at the top of their [[Prototype]] chain) the Object.prototype object."},
+    {"quotation": "for (key in obj) will return all enumerable, including protorype but symbol. Object.keys/entries/values() will return all own enumerable but symbol. Reflect.ownKeys() - own, enumerable inc Symbol"},
+    {"quotation": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object."},
+    {"quotation": "Object.create(proto, propertiesObject). Where  propertiesObject = {pname: {value: any, writeble: bool(value itself), configurable: bool(configuration of the prop), enumerable: bool}}"},
+    {"quotation": "Function Constructor - a function intended to be used to construct an object using the new operator"}
 ]

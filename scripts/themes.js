@@ -1,5 +1,3 @@
-'use strict';
-
 const themes = new Map();
 
 themes.set('objects', {
