@@ -1,9 +1,6 @@
 [
     {"quotation": "The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.</br></br>The window.cancelAnimationFrame() method cancels an animation frame request previously scheduled through a call to window.requestAnimationFrame(requestID)."},
     {"quotation": "String.prototype.padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string."},
-    {"quotation": "React Mounting:<br/><br/>constructor(), getDerivedStateFromProps(), render(), componentDidMount()"},
-    {"quotation": "React Updating:<br/><br/>getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate()"},
-    {"quotation": "React useEffect vs useLayoutEffect:<br/><br/> async vs sync (before paint). Avoid useLayoutEffect if possible - can slowdown"},
     {"quotation": "Promise Methods — All, AllSettled, Any, and Race"},
     {"quotation": "Nullish Coalescing: `const defName = name ?? 'Default Name'`"},
     {"quotation": "The querySelectorAll() method returns a static NodeList. The childNodes property returns a live NodeList.A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes). NodeList items can only be accessed by their index number. A NodeList is most often a static collection. Example: If you add a <li> element to a list in the DOM, the list in NodeList will not change."},
@@ -16,8 +13,5 @@
     {"quotation": "Currying - transforming func to treat it's parameters as sequence of individual function calls that each take one"},
     {"quotation": "type='module' - strict and defered by default. + await import is valid for conditional calls "},
     {"quotation": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope"},
-    {"quotation": "TS Generics: <br/>interface Setter&lt;Key, Value&gt; {<br/>&emsp;set: (key: Key, value: Value) => void;<br/>}"},
-    {"quotation": "React uses SyntheticBaseEvent for compatibility. We can access original through event.nativeEvent"},
-    {"quotation": "setCount(count => count + 1) > setCount(count + 1) - because otherwise it's render-dependend"},
-    {"quotation": "const [state, dispatch] = useReducer(reducer, initialArg, init);</br>useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks."}
+    {"quotation": "TS Generics: <br/>interface Setter&lt;Key, Value&gt; {<br/>&emsp;set: (key: Key, value: Value) => void;<br/>}"}   
 ]

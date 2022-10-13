@@ -3,7 +3,7 @@ import { getArticle } from "./scripts/articles.js";
 import rbutton from "./scripts/components/radio.js";
 
 const KEYS_THEME = "theme";
-const TOPICS = ["objects", "classes", "generators", "es6", "other"];
+const TOPICS = ["objects", "classes", "generators", "es6", "react", "other"];
 
 const switcher = document.getElementById("topics");
 const content = document.getElementById("content");

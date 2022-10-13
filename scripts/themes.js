@@ -20,6 +20,11 @@ themes.set('es6', {
     '--text-color': '#ffffffb3',
 });
 
+themes.set('react', {
+    '--background-color': '#306b68',
+    '--text-color': '#ffffffb3',
+});
+
 themes.set('other', {
     '--background-color': '#210439',
     '--text-color': '#ffffffb3',

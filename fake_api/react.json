@@ -1,0 +1,16 @@
+[
+    {"quotation": "Mounting:<br/><br/>constructor(), getDerivedStateFromProps(), render(), componentDidMount()"},
+    {"quotation": "Updating:<br/><br/>getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate()"},
+    {"quotation": "useEffect vs useLayoutEffect:<br/><br/> async vs sync (before paint). Avoid useLayoutEffect if possible - can slowdown"},
+    {"quotation": "uses SyntheticBaseEvent for compatibility. We can access original through event.nativeEvent"},
+    {"quotation": "setCount(count => count + 1) > setCount(count + 1) - because otherwise it's render-dependend"},
+    {"quotation": "const [state, dispatch] = useReducer(reducer, initialArg, init);</br>useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks."},
+    {"quotation": "useRef can be used to keep state but prevent rerendering. When it's bound to the element it will be null on the first render, and ok after. forwardRef() around the component is required to pass ref through props"},
+    {"quotation": "useImperativeHandle customizes the instance value that is exposed to parent components when using ref. As always, imperative code using refs should be avoided in most cases."},
+    {"quotation": "<> Can't have key but full syntax &lt;Fragment key='some'&gt; can"},
+    {"quotation": "useMemo memoizing a value, useCallback memoizing a function"},
+    {"quotation": "import {memo} from 'react'; This HOC can be used to memoize component. It relies on props, but you can pass in second argument - function"},
+    {"quotation": "lazy imported component requires &lt;Suspense&gt; with around with a 'fallback' propery"},
+    {"quotation": "Portal - a built-in method for rendring React elements into a DOM node outside of the parent React tree"},
+    {"quotation": "Error Boundary - catches errors in child components, prevents app from crashing. Requires Class based component, relies on: static getDerivedStateFromError(error) and componentDidCatch(error, errorInfo)"}
+]
