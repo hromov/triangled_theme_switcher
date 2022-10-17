@@ -1,5 +1,5 @@
 [
-    {"quotation": "The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.</br></br>The window.cancelAnimationFrame() method cancels an animation frame request previously scheduled through a call to window.requestAnimationFrame(requestID)."},
+    {"quotation": "The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.<br><br>The window.cancelAnimationFrame() method cancels an animation frame request previously scheduled through a call to window.requestAnimationFrame(requestID)."},
     {"quotation": "String.prototype.padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string."},
     {"quotation": "Promise Methods — All, AllSettled, Any, and Race"},
     {"quotation": "Nullish Coalescing: `const defName = name ?? 'Default Name'`"},
@@ -13,5 +13,7 @@
     {"quotation": "Currying - transforming func to treat it's parameters as sequence of individual function calls that each take one"},
     {"quotation": "type='module' - strict and defered by default. + await import is valid for conditional calls "},
     {"quotation": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope"},
-    {"quotation": "TS Generics: <br/>interface Setter&lt;Key, Value&gt; {<br/>&emsp;set: (key: Key, value: Value) => void;<br/>}"}   
+    {"quotation": "TS Generics: <br>interface Setter&lt;Key, Value&gt; {<br>&emsp;set: (key: Key, value: Value) => void;<br>}"},
+    {"quotation": "CSS Variables: <br>const root = document.querySelector(':root');<br>getComputedStyle(root).getPropery('--bs-primary');<br>root.style.setProperyValue('--bs-primary', 'red');"},
+    {"quotation": "<a href='https://developer.mozilla.org/en-US/docs/Web/API' target='_blank' rel='nofollow'>Web APIs</a>"}
 ]
