@@ -12,5 +12,6 @@
     {"quotation": "import {memo} from 'react'; This HOC can be used to memoize component. It relies on props, but you can pass in second argument - function"},
     {"quotation": "lazy imported component requires &lt;Suspense&gt; with around with a 'fallback' propery"},
     {"quotation": "Portal - a built-in method for rendring React elements into a DOM node outside of the parent React tree"},
-    {"quotation": "Error Boundary - catches errors in child components, prevents app from crashing. Requires Class based component, relies on: static getDerivedStateFromError(error) and componentDidCatch(error, errorInfo)"}
+    {"quotation": "Error Boundary - catches errors in child components, prevents app from crashing. Requires Class based component, relies on: static getDerivedStateFromError(error) and componentDidCatch(error, errorInfo)"},
+    {"quotation": "Returns a stateful value for the pending state of the transition, and a function to start it. (Lag behind, but responsive). useDefferedValue can achive similar behaviour but when we don't have control over the state"}
 ]
